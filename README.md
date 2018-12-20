@@ -1,5 +1,5 @@
 # AngularJS Unique Filter
-[![Build Status](https://secure.travis-ci.org/noblesamurai/angularjs-unique-filter.png?branch=master)](http://travis-ci.org/noblesamurai/angularjs-unique-filter) [![NPM version](https://badge-me.herokuapp.com/api/npm/angularjs-unique-filter.png)](http://badges.enytc.com/for/npm/angularjs-unique-filter)
+[![Build Status](https://travis-ci.com/noblesamurai/angularjs-unique-filter.svg?branch=master)](https://travis-ci.com/noblesamurai/angularjs-unique-filter)
 
 > unique filter for Angular 1.x
 
