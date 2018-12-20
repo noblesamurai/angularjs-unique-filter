@@ -1,10 +1,10 @@
 {
   "name": "angularjs-unique-filter",
   "description": "unique filter for angular 1.x",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "Andrew Harris <andrew@noblesamurai.com>",
   "license": "BSD",
-  "main": "index.js",
+  "main": "src/unique.js",
   "scripts": {
     "coverage": "nyc -a -c -r html -r text -r lcov npm test",
     "pretest": "semistandard --env mocha",
@@ -21,17 +21,23 @@
     "url": "https://github.com/noblesamurai/angularjs-unique-filter/issues"
   },
   "engines": {
-    "node": "6.x",
-    "npm": "3.x"
+    "node": "8.x",
+    "npm": "6.x"
   },
   "dependencies": {},
+  "peerDependencies": {
+    "angular": "^1.x"
+  },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "dirty-chai": "^1.2.2",
-    "mocha": "~3.3.0",
-    "nyc": "^10.1.2",
-    "semistandard": "*",
-    "jsdoc-to-markdown": "~3.0.0"
+    "angular": "^1.x",
+    "angular-mocks": "^1.x",
+    "chai": "^4.2.0",
+    "dirty-chai": "^2.0.1",
+    "jsdoc-to-markdown": "^4.0.1",
+    "jsdom": "^13.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "semistandard": "*"
   },
   "keywords": [],
   "nyc": {
