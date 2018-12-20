@@ -1,25 +1,10 @@
-# Angularjs-unique-filter [![Build Status](https://secure.travis-ci.org/noblesamurai/angularjs-unique-filter.png?branch=master)](http://travis-ci.org/noblesamurai/angularjs-unique-filter) [![NPM version](https://badge-me.herokuapp.com/api/npm/angularjs-unique-filter.png)](http://badges.enytc.com/for/npm/angularjs-unique-filter)
+# AngularJS Unique Filter
+[![Build Status](https://travis-ci.com/noblesamurai/angularjs-unique-filter.svg?branch=master)](https://travis-ci.com/noblesamurai/angularjs-unique-filter)
 
-> unique filter for angular 1.x
+> unique filter for Angular 1.x
 
 ## Purpose
-- What problem does this module solve? At least a few sentences.
-PLEASE_FILL_IN_HERE
-
-## Usage
-
-```js
-// Several examples of usage.
-// Usually copying and pasting code from the tests and making the code standalone suffices.
-// PLEASE_FILL_IN_HERE
-```
-
-## API
-
-PLEASE_FILL_IN_HERE
-
-Note: To regenerate this section from the jsdoc run `npm run docs` and paste
-the output above.
+- Used to filter a list so that all items are unique based on a specified object key.
 
 ## Installation
 
@@ -28,6 +13,28 @@ This module is installed via npm:
 ``` bash
 $ npm install angularjs-unique-filter
 ```
+
+## Usage
+
+Import angularjs-unique-filter and angular:
+
+```js
+import angular from 'angular';
+import uniqueFilter from 'angularjs-unique-filter';
+```
+
+Ensure that your application module specifies the filter as a dependency:
+
+```js
+angular.module('yourModule', [ uniqueFilter.name ]);
+```
+
+Use the filter in your html:
+
+```html
+<ul ng-repeat="item in items | unique:'name'">{{ item.name }}</ul>
+```
+
 ## License
 
 The BSD License
