@@ -1,0 +1,11 @@
+[tool.tartufo]
+cleanup = true
+entropy = true
+json = false
+regex = true
+repo-path = "."
+exclude-path-patterns = [
+  'tartufo.toml',
+  'package-lock.json'
+]
+exclude-signatures = []
