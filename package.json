@@ -6,7 +6,7 @@
   "license": "BSD",
   "main": "src/unique.js",
   "scripts": {
-    "coverage": "nyc -a -c -r html -r text -r lcov npm test",
+    "coverage": "c8 npm test",
     "pretest": "semistandard --env mocha",
     "test": "mocha --recursive test",
     "watch": "mocha --recursive --watch test",
@@ -24,7 +24,9 @@
     "node": "8.x",
     "npm": "6.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "c8": "^7.7.3"
+  },
   "peerDependencies": {
     "angular": "^1.x"
   },
@@ -36,11 +38,10 @@
     "jsdoc-to-markdown": "^4.0.1",
     "jsdom": "^13.1.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
     "semistandard": "*"
   },
   "keywords": [],
-  "nyc": {
+  "c8": {
     "exclude": [
       "coverage",
       "test"
