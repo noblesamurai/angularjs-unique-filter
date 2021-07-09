@@ -3,6 +3,12 @@
 
 > unique filter for Angular 1.x
 
+## Prerequisites
+
+```
+$ pip install pre-commit
+```
+
 ## Purpose
 - Used to filter a list so that all items are unique based on a specified object key.
 
@@ -11,6 +17,7 @@
 This module is installed via npm:
 
 ``` bash
+$ pre-commit install --install-hooks
 $ npm install angularjs-unique-filter
 ```
 
